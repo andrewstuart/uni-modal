@@ -1,6 +1,6 @@
 /**
  * @ngdoc directive
- * @name uniModal.directive:modal
+ * @name uni.modal.directive:modal
  * @param {Boolean} shown Whether or not the modal dialog should be hidden via the
  * "hidden" class. Implementation of this class is up to the consumer.
  * @param {Function} [modalHide] An optional method to be called any time the modal dialog is
@@ -11,8 +11,8 @@
  * Appends a global hider with class 'modal-hider' (style it yourself) and
  * shows the content inside the `<modal>` element
  */
-angular.module('uni', [])
-.directive('modal', function ($document) {
+angular.module('uni.modal', [])
+.directive('uniModal', function ($document) {
     'use strict';
 
     return {
@@ -26,7 +26,7 @@ angular.module('uni', [])
         },
         link: function postLink($scope, iEle) {
             iEle.addClass('hidden');
-            var modalHider = angular.element('<div class="modal-hider"></div>');
+            var modalHider = angular.element('<div class="uni-modal-hider"></div>');
 
             var hasBeenShown;
 
