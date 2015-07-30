@@ -1,0 +1,22 @@
+{
+  "name": "uni-modal",
+  "version": "0.0.0",
+  "authors": [
+    "Andrew Stuart <andrew.stuart2@gmail.com>"
+  ],
+  "description": "A simpler modal angular directive",
+  "main": "modal.js",
+  "keywords": [
+    "modal",
+    "angular",
+    "unicon"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
